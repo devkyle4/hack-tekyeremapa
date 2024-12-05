@@ -5,6 +5,8 @@
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    padding-left: 40px;
+    /* Push the entire FAQ section content back a bit */
 }
 
 /* Title of the FAQ Section */
@@ -19,10 +21,14 @@
 /* Individual FAQ Item */
 .faq-item {
     transition: background-color 0.2s ease;
+    margin-left: 10px;
+    /* Optional: pushes each FAQ item a bit to the left */
 }
 
+/* Remove the hover background color effect */
 .faq-item:hover {
-    background-color: #f7f7f7;
+    background-color: transparent;
+    /* Ensure no background color on hover */
 }
 
 /* FAQ Question Styles */
@@ -74,6 +80,8 @@
 @media (max-width: 768px) {
     .faq-container {
         padding: 15px;
+        padding-left: 20px;
+        /* Adjust for mobile */
     }
 
     .faq-title {

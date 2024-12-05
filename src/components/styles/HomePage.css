@@ -70,6 +70,23 @@
     color: #0b0521;
 }
 
+/* Apply the Playfair Display font for Project Euphonia */
+.euphonia {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.euphonia:hover {
+    color: #6B46C1;
+    transform: scale(1.05);
+}
+
 /* Hackathon Overview Section */
 .overview {
     font-size: 1.2rem;
@@ -160,7 +177,6 @@
     padding: 15px 30px;
     border-radius: 8px;
     display: inline-block;
-    background: linear-gradient(135deg, rgba(2, 0, 15, 0.1) 0%, rgba(4, 1, 22, 0.05) 100%);
 }
 
 /* Sidebar Card for Register */
@@ -175,7 +191,6 @@
     top: 30px;
     align-self: flex-start;
     margin-left: 30px;
-    /* Margin from the main content */
 }
 
 .register-card h3 {
