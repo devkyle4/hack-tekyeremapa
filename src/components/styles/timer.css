@@ -21,6 +21,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: auto;
+    gap: 8px;
 }
 
 .time-unit {
@@ -38,4 +39,25 @@
 .time-unit p {
     font-size: 1rem;
     color: #666;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .countdown-timer {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .timer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .time-unit span {
+        font-size: 1.2rem;
+    }
+
+    .timer-header {
+        font-size: 1.2rem;
+    }
 }
