@@ -1,17 +1,15 @@
 /* Container for the FAQ Section */
 .faq-container {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    padding-left: 40px;
+    position: relative;
+    left: -110px;
     /* Push the entire FAQ section content back a bit */
 }
 
 /* Title of the FAQ Section */
 .faq-title {
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     font-weight: bold;
     color: #021427;
@@ -21,11 +19,9 @@
 /* Individual FAQ Item */
 .faq-item {
     transition: background-color 0.2s ease;
-    margin-left: 10px;
     /* Optional: pushes each FAQ item a bit to the left */
 }
 
-/* Remove the hover background color effect */
 .faq-item:hover {
     background-color: transparent;
     /* Ensure no background color on hover */
@@ -41,6 +37,8 @@
     color: #333;
     cursor: pointer;
     transition: color 0.3s ease;
+    border: none;
+    border-radius: 5px;
 }
 
 .faq-question:hover {
