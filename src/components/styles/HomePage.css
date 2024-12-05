@@ -215,22 +215,115 @@
 .register-card .register-button:hover {
     background-color: #e68900;
 }
-
 /* Media Queries */
 @media (max-width: 768px) {
-    .hackathon-page {
-        flex-direction: column;
-        /* Stack the content vertically on smaller screens */
+
+.hackathon-page {
+        display: flex;
+        justify-content: center;
         align-items: center;
+        margin: 30px 0;
+        padding: 20px;
+        /* height: 100vh; */
+        flex-direction: column;
     }
 
-    .register-card {
+        .tags-section {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-self: self-start;
+
+        }
+    
+        .tags-section-title {
+            font-size: 1.0rem;
+            font-weight: bold;
+            color: #021427;
+        }
+    
+        .tags-container {
+            display: flex;
+            /* Align tags in a row */
+            gap: 15px;
+            /* Space between the tags */
+        }
+    
+        .tag {
+            background-color: #021427;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s ease;
+            cursor: pointer;
+        }
+    
+        .tag:hover {
+            background-color: #ff9900;
+            transform: scale(1.05);
+        }
+    .main-content {
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Stack the sections vertically in the center of the page */
+    .section {
         width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Sidebar Register Card */
+    .register-card {
+        width: 20%;
+        height: 10%;
+        background-color: #021427;
+        padding: 20px;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+        bottom: 40px;
+        align-self: center;
         margin-left: 0;
     }
 
-    .sponsors {
+    /* Other Mobile-specific adjustments */
+    .tags-section {
         flex-direction: column;
-        /* Stack sponsors vertically on small screens */
+        gap: 10px;
+        align-items: center;
+        position: static;
+        left: 0;
+        text-align: center;
+    }
+
+    .tags-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tag {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+        margin-bottom: 10px;
+    }
+
+    .register-card h3 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .register-card .register-button {
+        font-size: 1.2rem;
+        padding: 12px 20px;
     }
 }

@@ -5,15 +5,14 @@ import FAQSection from "./faqs";
 import Timeline from "./timeline";
 import CountdownTimer from "../Timer";
 
-
-  const downloadDataset = () => {
-    const datasetUrl = "/path/to/your/dataset.csv"; 
-    const link = document.createElement("a");
-    link.href = datasetUrl;
-    link.download = "dataset.csv"; // Filename to download
-    link.click();
+const downloadDataset = () => {
+  const datasetUrl = "/path/to/your/dataset.csv";
+  const link = document.createElement("a");
+  link.href = datasetUrl;
+  link.download = "dataset.csv"; // Filename to download
+  link.click();
 };
-  
+
 function HomePage() {
   return (
     <div className="hackathon-page">
@@ -61,8 +60,8 @@ function HomePage() {
           </div>
           <ul>
             <li>
-              Integrate text-to-speech (TTS) or automatic speech recognition
-              (ASR) for Akan.
+              Integrate text-to-speech (TTS) or automatic speech recognition for
+              Akan.
             </li>
             <li>
               Develop an intuitive and user-friendly interface tailored to the
@@ -92,6 +91,7 @@ function HomePage() {
             </li>
           </ul>
         </section>
+        {/* Timeline Section (optional) */}
         <Timeline />
         {/* Awards Section */}
         <section id="prizes" className="section awards">
@@ -110,14 +110,15 @@ function HomePage() {
         {/* FAQ Section */}
         <FAQSection />
         {/* Sponsors Section */}
-        <section id="sponsors" className=" section sponsors">
+        <section id="sponsors" className="section sponsors">
           <h2>Sponsors</h2>
           <img src="/gdi_hub.png" alt="GDI Hub" />
-          <img src="/hci-black.png" alt="hci lab" />
+          <img src="/hci-black.png" alt="HCI Lab" />
           <p className="euphonia">Project Euphonia</p>
         </section>
       </div>
-      {/* Sidebar Register Card */}
+
+      {/* Register Card and Timer for Phone view */}
       <div className="register-card">
         <CountdownTimer />
         <h3>Register Now</h3>

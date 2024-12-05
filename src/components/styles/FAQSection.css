@@ -2,29 +2,24 @@
 .faq-container {
     max-width: 800px;
     transition: all 0.3s ease;
-    position: relative;
-    left: -110px;
-    /* Push the entire FAQ section content back a bit */
+    margin: 0 auto; /* Center the FAQ container */
+    padding: 0 20px; /* Add some padding for spacing */
 }
 
 /* Title of the FAQ Section */
 .faq-title {
-    text-align: left;
-    font-size: 2rem;
+    text-align: center; /* Center the title */
+    font-size: 1.5rem; /* Adjust font size for mobile */
     font-weight: bold;
     color: #021427;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /* Individual FAQ Item */
 .faq-item {
     transition: background-color 0.2s ease;
-    /* Optional: pushes each FAQ item a bit to the left */
-}
-
-.faq-item:hover {
-    background-color: transparent;
-    /* Ensure no background color on hover */
+    margin-bottom: 20px; /* Add spacing between FAQ items */
+    text-align: center; /* Ensure FAQ items are centered */
 }
 
 /* FAQ Question Styles */
@@ -33,27 +28,28 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Adjust font size for mobile */
     color: #333;
     cursor: pointer;
     transition: color 0.3s ease;
     border: none;
     border-radius: 5px;
+    width: 100%; /* Ensure the button takes full width */
+    text-align: left; /* Left-align the question text */
 }
 
-.faq-question:hover {
-    color: #0a0040;
-}
-
-/* Chevron Icon Styles */
-.faq-icon {
-    transition: transform 0.3s ease;
+/* To center the icon inside the button */
+.faq-question .faq-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px; /* Space between text and icon */
 }
 
 /* FAQ Answer Styles */
 .faq-answer {
     padding: 16px;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Adjust font size for mobile */
     color: #555;
     line-height: 1.6;
     transition: max-height 0.3s ease, opacity 0.3s ease;
@@ -65,28 +61,67 @@
 /* Expanded State for Answer */
 .faq-item.open .faq-answer {
     max-height: 200px;
-    /* or a number large enough to fit your content */
     opacity: 1;
 }
 
+/* FAQ Icon Rotation when Open */
 .faq-item.open .faq-icon {
     transform: rotate(180deg);
-    /* Rotate the chevron icon */
 }
 
-/* Responsive Styles */
+/* Responsive Styles for Phones (max-width: 768px) */
 @media (max-width: 768px) {
     .faq-container {
-        padding: 15px;
-        padding-left: 20px;
-        /* Adjust for mobile */
+        margin-top: 0;
+        margin-bottom: 30px;
+        position: relative;
+        padding: 0 15px; /* Slightly less padding for smaller screens */
+    }
+
+    .faq-section {
+        border: 1px solid red;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 1rem;
+        margin-left: 50px;
     }
 
     .faq-title {
-        font-size: 1.5rem;
+        font-size: 1.4rem; /* Adjust font size for smaller screens */
+        margin-bottom: 15px;
     }
 
     .faq-question {
-        font-size: 1rem;
+        font-size: 1rem; /* Adjust font size for readability */
+        padding: 12px; /* Less padding for better fitting */
+        text-align: left; /* Align the question text properly */
+    }
+
+    .faq-answer {
+        font-size: 0.9rem; /* Adjust font size for mobile */
+        padding: 12px; /* Adjust padding for mobile */
+    }
+
+    /* Ensure FAQ container fills available width and is centered */
+    .faq-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the content */
+        padding: 0;
+        width: 100%;
+    }
+
+    /* Ensure FAQ items are centered */
+    .faq-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Ensure icon container is aligned properly */
+    .faq-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

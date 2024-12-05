@@ -3,7 +3,7 @@ import "./styles/MiddleNavbar.css"; // Import CSS styles
 
 const MiddleNavbar = () => {
   const [isSticky, setIsSticky] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // To handle menu toggle on mobile
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // To handle menu toggle
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,19 +21,19 @@ const MiddleNavbar = () => {
     };
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle the menu visibility
-  };
+  // const toggleMenu = () => {
+  //   setIsMenuOpen((prev) => !prev); 
+  // };
 
   return (
     <div className={`middle-navbar ${isSticky ? "sticky" : ""}`}>
       <div className="navbar-container">
-        {/* Hamburger icon for mobile */}
+        {/* Hamburger icon for mobile
         <div className="hamburger" onClick={toggleMenu}>
-          <span className="line"></span>
-          <span className="line"></span>
-          <span className="line"></span>
-        </div>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div> */}
 
         {/* Navbar Links */}
         <div className={`navbar-links ${isMenuOpen ? "open" : ""}`}>
