@@ -1,3 +1,45 @@
+/* Tags Section */
+.tags-section {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-self: self-start;
+    position: relative;
+    left: 80px;
+}
+
+.tags-section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #021427;
+    margin-bottom: 15px;
+}
+
+.tags-container {
+    display: flex;
+    /* Align tags in a row */
+    gap: 15px;
+    /* Space between the tags */
+}
+
+.tag {
+    background-color: #021427;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.tag:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+}
+
 /* Main container for the hackathon page */
 .hackathon-page {
     display: flex;
@@ -5,7 +47,6 @@
     align-items: flex-start;
     margin: 30px 0;
     padding: 0 20px;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 /* Main Content Container (Center everything) */
@@ -15,10 +56,127 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;  /* Center content on mobile */
+    align-items: center;
     margin-right: 20px;
     margin-left: 20px;
     color: #0b0521;
+}
+
+/* Section Containers */
+.section {
+    margin-bottom: 40px;
+    text-align: left;
+    width: 100%;
+    color: #0b0521;
+}
+
+/* Apply the Playfair Display font for Project Euphonia */
+.euphonia {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.euphonia:hover {
+    color: #6B46C1;
+    transform: scale(1.05);
+}
+
+/* Hackathon Overview Section */
+.overview {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px;
+    /* text-align: center; */
+}
+
+/* About Section */
+.key-goals ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.key-goals li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #0b0521;
+}
+
+/* Style for Download Dataset button */
+.about-link.download-btn {
+    background-color: #f12a2a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-link.download-btn:hover {
+    background-color: #bc0707;
+}
+
+/* Rules Section */
+.rules ul {
+    padding-left: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.rules li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    color: #0b0521;
+}
+
+/* Awards Section */
+.awards ul {
+    padding-left: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #0b0521;
+}
+
+.awards li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+        color: #0b0521;
+}
+
+/* Sponsors Section */
+.sponsors {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* Center sponsors */
+    margin-top: 20px;
+}
+
+.sponsors img {
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.sponsors .euphonia {
+    font-size: 1.0rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 8px;
+    display: inline-block;
 }
 
 /* Sidebar Card for Register */
@@ -33,17 +191,13 @@
     top: 30px;
     align-self: flex-start;
     margin-left: 30px;
-    margin-top: 30px;
-    text-align: center;  /* Center the text in the card */
 }
 
-/* Register Card title */
 .register-card h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
-/* Register Button */
 .register-card .register-button {
     background-color: #ff9900;
     padding: 10px 20px;
@@ -62,47 +216,21 @@
     background-color: #e68900;
 }
 
-/* Centering countdown timer for mobile */
-.countdown-timer {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 0 auto;  /* Center the timer on mobile */
-}
-
-/* Responsive Design */
+/* Media Queries */
 @media (max-width: 768px) {
     .hackathon-page {
         flex-direction: column;
-        align-items: center;  /* Center content in a column */
-    }
-
-    .main-content {
-        margin-right: 0;
-        margin-left: 0;
-        align-items: center;  /* Center main content */
+        /* Stack the content vertically on smaller screens */
+        align-items: center;
     }
 
     .register-card {
-        width: 100%; /* Full width for register card on mobile */
+        width: 100%;
         margin-left: 0;
-        margin-top: 30px;
-        text-align: center;
     }
 
     .sponsors {
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .sponsors img {
-        max-width: 80px;
-        height: auto;
-        object-fit: contain;
+        /* Stack sponsors vertically on small screens */
     }
 }

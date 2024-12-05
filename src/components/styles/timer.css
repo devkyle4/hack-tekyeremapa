@@ -21,7 +21,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: auto;
-    gap: 8px;
+    gap: 5px;
 }
 
 .time-unit {
@@ -54,8 +54,11 @@
     }
 
     .time-unit span {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
+        .time-unit p {
+            font-size: 1rem;
+        }
 
     .timer-header {
         font-size: 1.2rem;

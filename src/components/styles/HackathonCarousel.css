@@ -1,3 +1,4 @@
+/* General carousel styles for all screen sizes */
 .carousel-container {
     width: 100%;
     max-width: 1200px;
@@ -53,4 +54,50 @@
 .slick-prev,
 .slick-next {
     color: white;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+
+    /* Reduce the height of the carousel on mobile */
+    .carousel-slide {
+        height: 300px;
+        /* Reduced height for smaller screens */
+    }
+
+    /* Adjust text size for mobile */
+    .carousel-text h2 {
+        font-size: 1.5rem;
+        /* Smaller heading on mobile */
+    }
+
+    .carousel-text p {
+        font-size: 1rem;
+        /* Smaller paragraph text on mobile */
+    }
+
+    /* Adjust background overlay for better visibility */
+    .carousel-image {
+        background-color: rgba(0, 0, 0, 0.3);
+        /* Lighter overlay for better readability on mobile */
+    }
+
+    /* Adjust carousel controls (arrows) for mobile */
+    .slick-prev,
+    .slick-next {
+        font-size: 20px;
+        /* Larger arrows on smaller screens for easier touch */
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent background for better visibility */
+    }
+
+    /* Adjust slick-dots for mobile */
+    .slick-dots li button:before {
+        font-size: 16px;
+        /* Bigger dots for mobile */
+    }
 }
