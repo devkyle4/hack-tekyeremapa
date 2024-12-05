@@ -3,6 +3,7 @@ import "../styles/HomePage.css";
 import MiddleNavbar from "../MiddleNavbar.js";
 import FAQSection from "./faqs";
 import Timeline from "./timeline";
+import CountdownTimer from "../Timer";
 
 
   const downloadDataset = () => {
@@ -107,7 +108,7 @@ function HomePage() {
           </ul>
         </section>
         {/* FAQ Section */}
-        <FAQSection /> {/* Add the FAQSection component here */}
+        <FAQSection />
         {/* Sponsors Section */}
         <section id="sponsors" className=" section sponsors">
           <h2>Sponsors</h2>
@@ -118,6 +119,7 @@ function HomePage() {
       </div>
       {/* Sidebar Register Card */}
       <div className="register-card">
+        <CountdownTimer />
         <h3>Register Now</h3>
         <p>Don't miss out on this amazing opportunity to make a difference!</p>
         <Link to="/register" className="register-button">
