@@ -1,0 +1,56 @@
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.carousel-slide {
+    position: relative;
+    height: 400px;
+    /* Adjust height as needed */
+}
+
+.carousel-image {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Darken background for text contrast */
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.carousel-text p {
+    font-size: 1.2rem;
+}
+
+.slick-dots {
+    bottom: 10px;
+}
+
+.slick-dots li button:before {
+    color: #fff;
+    font-size: 12px;
+}
+
+.slick-prev,
+.slick-next {
+    color: white;
+}

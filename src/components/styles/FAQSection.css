@@ -1,0 +1,86 @@
+/* Container for the FAQ Section */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Title of the FAQ Section */
+.faq-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #021427;
+    margin-bottom: 30px;
+}
+
+/* Individual FAQ Item */
+.faq-item {
+    transition: background-color 0.2s ease;
+}
+
+.faq-item:hover {
+    background-color: #f7f7f7;
+}
+
+/* FAQ Question Styles */
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    font-size: 1.1rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #0a0040;
+}
+
+/* Chevron Icon Styles */
+.faq-icon {
+    transition: transform 0.3s ease;
+}
+
+/* FAQ Answer Styles */
+.faq-answer {
+    padding: 16px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+/* Expanded State for Answer */
+.faq-item.open .faq-answer {
+    max-height: 200px;
+    /* or a number large enough to fit your content */
+    opacity: 1;
+}
+
+.faq-item.open .faq-icon {
+    transform: rotate(180deg);
+    /* Rotate the chevron icon */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 15px;
+    }
+
+    .faq-title {
+        font-size: 1.5rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+    }
+}
