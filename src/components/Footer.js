@@ -35,7 +35,7 @@ function Footer() {
         </div>
         <div className="footer-content">
           <p>
-            © 2024 Human Computer Interactions & Pervasive Technologies
+            © 2025 Human Computer Interactions & Persuasive Technologies
             Laboratory
           </p>
           <p className="footer-logo">HCI Lab</p>

@@ -98,7 +98,7 @@ function HomePage() {
           <h2>Awards</h2>
           <ul>
             <li>
-              Up to £5,000 in awards plus $5000 cash prize from project Euphonia
+              Up to £5,000 in awards plus $5000 cash prize 
             </li>
             <li>
               Mentorship opportunities with experts from Google and GDI Hub,
