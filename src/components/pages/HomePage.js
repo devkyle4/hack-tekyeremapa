@@ -4,13 +4,13 @@ import MiddleNavbar from "../MiddleNavbar.js";
 import FAQSection from "./faqs";
 import Timeline from "./timeline";
 import CountdownTimer from "../Timer";
+import { QRCodeSVG } from "qrcode.react"; // Import QRCodeSVG
 
 const downloadDataset = () => {
-  const datasetUrl = "/path/to/your/dataset.csv";
-  const link = document.createElement("a");
-  link.href = datasetUrl;
-  link.download = "dataset.csv"; // Filename to download
-  link.click();
+  window.open(
+    "https://huggingface.co/datasets/hci-lab-dcsug/akan_speech_data/tree/main",
+    "_blank"
+  );
 };
 
 function HomePage() {
@@ -25,6 +25,7 @@ function HomePage() {
             <span className="tag">Team Size: 1-5</span>
           </div>
         </div>
+        {/* Overview, About, Rules, etc. */}
         <section id="overview" className="section overview">
           <h2>Overview</h2>
           <p>
@@ -75,7 +76,7 @@ function HomePage() {
             <li>Scalability of the app to other Ghanaian languages.</li>
           </ul>
           <button className="about-link download-btn" onClick={downloadDataset}>
-            Download Dataset
+            Link to Dataset
           </button>
         </section>
         {/* Rules Section */}
@@ -91,7 +92,6 @@ function HomePage() {
             </li>
           </ul>
         </section>
-        {/* Timeline Section (optional) */}
         <Timeline />
         {/* Awards Section */}
         <section id="prizes" className="section awards">
@@ -107,25 +107,49 @@ function HomePage() {
             <li>A potential scholarship for an MSc in Computer Science.</li>
           </ul>
         </section>
-        {/* FAQ Section */}
         <FAQSection />
         {/* Sponsors Section */}
         <section id="sponsors" className="section sponsors">
           <h2>Sponsors</h2>
           <img src="/gdi_hub.png" alt="GDI Hub" />
           <img src="/hci-black.png" alt="HCI Lab" />
-          <p className="euphonia">Project Euphonia</p>
+          <a
+            href="https://sites.research.google/euphonia/about/"
+            className="euphonia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Project Euphonia
+          </a>
         </section>
       </div>
 
-      {/* Register Card and Timer for Phone view */}
-      <div className="register-card">
-        <CountdownTimer />
-        <h3>Register Now</h3>
-        <p>Don't miss out on this amazing opportunity to make a difference!</p>
-        <Link to="/register" className="register-button">
-          Register
-        </Link>
+      {/* Register Card and QR Code together in a parent div */}
+      <div className="register-card-container">
+        <div className="register-card">
+          <CountdownTimer />
+          <h3>Register Now</h3>
+          <p>
+            Don't miss out on this amazing opportunity to make a difference!
+          </p>
+          <Link
+            to="https://link.webropol.com/s/hacktetremapa"
+            className="register-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Register
+          </Link>
+        </div>
+
+        {/* QR Code Section for Registration */}
+        <div className="qr-code-container">
+          <h3>Scan the QR Code to Register</h3>
+          <QRCodeSVG
+            value="https://link.webropol.com/s/hacktetremapa"
+            size={200}
+          />
+        </div>
       </div>
     </div>
   );

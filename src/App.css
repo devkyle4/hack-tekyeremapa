@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;
@@ -6,14 +10,13 @@ body {
   flex-direction: column;
   align-self: center;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 .app-container {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 .hackathon-page p{
       text-align: justify;
 }

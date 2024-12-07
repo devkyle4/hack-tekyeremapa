@@ -8,7 +8,7 @@
 
 /* Title of the FAQ Section */
 .faq-title {
-    text-align: center; /* Center the title */
+    text-align: left; /* Center the title */
     font-size: 1.5rem; /* Adjust font size for mobile */
     font-weight: bold;
     color: #021427;
@@ -70,16 +70,14 @@
 }
 
 /* Responsive Styles for Phones (max-width: 768px) */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .faq-container {
         margin-top: 0;
         margin-bottom: 30px;
-        position: relative;
         padding: 0 15px; /* Slightly less padding for smaller screens */
     }
 
     .faq-section {
-        border: 1px solid red;
         width: 100%;
         display: flex;
         justify-content: center;

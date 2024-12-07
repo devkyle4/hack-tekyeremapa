@@ -6,7 +6,7 @@ const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={`faq-item ${isOpen ? "open" : ""}`}>
+    <div id="faqs" className={`faq-item ${isOpen ? "open" : ""}`}>
       <button className="faq-question" onClick={() => setIsOpen(!isOpen)}>
         <span className="font-medium text-gray-900 text-lg">{question}</span>
         <div className="ml-4 flex-shrink-0 text-gray-400 faq-icon">

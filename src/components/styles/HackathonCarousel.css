@@ -9,7 +9,6 @@
 .carousel-slide {
     position: relative;
     height: 400px;
-    /* Adjust height as needed */
 }
 
 .carousel-image {
@@ -21,7 +20,7 @@
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Darken background for text contrast */
+    border-radius: 8px;
 }
 
 .carousel-text {

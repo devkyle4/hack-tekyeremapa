@@ -21,19 +21,10 @@ const MiddleNavbar = () => {
     };
   }, []);
 
-  // const toggleMenu = () => {
-  //   setIsMenuOpen((prev) => !prev); 
-  // };
 
   return (
     <div className={`middle-navbar ${isSticky ? "sticky" : ""}`}>
       <div className="navbar-container">
-        {/* Hamburger icon for mobile
-        <div className="hamburger" onClick={toggleMenu}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </div> */}
 
         {/* Navbar Links */}
         <div className={`navbar-links ${isMenuOpen ? "open" : ""}`}>

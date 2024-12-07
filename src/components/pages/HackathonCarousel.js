@@ -14,14 +14,14 @@ const hackathons = [
     id: 2,
     title: "Tɛkyerɛma Pa Hackathon 2025",
     date: "May 17-30th, 2025",
-    image: "/hackathon2.jpg",
+    image: "/group_pic.jpg",
     venue: "Venue: University of Ghana, Accra",
   },
   {
     id: 3,
     title: "Tɛkyerɛma Pa Hackathon 2025",
     date: "May 17-30th, 2025",
-    image: "/hackathon3.jpg",
+    image: "/languages.jpg",
     venue: "Venue: University of Ghana, Accra",
   },
 ];
