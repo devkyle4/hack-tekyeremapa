@@ -29,7 +29,7 @@ function HomePage() {
         <section id="overview" className="section overview">
           <h2>Overview</h2>
           <p>
-            Join us for the Tɛkyerɛma Pa Hackathon 2024, an innovation-driven
+            Join us for the Tɛkyerɛma Pa Hackathon 2025, an innovation-driven
             event aimed at designing and developing a groundbreaking app in Akan
             to support individuals with speech impairments. This hackathon
             invites tech enthusiasts, developers, linguists, and accessibility
@@ -43,7 +43,7 @@ function HomePage() {
           <h3>About</h3>
           <div className="about-hack">
             <p className="about-1">
-              The Tɛkyerɛma Pa Hackathon 2024 invites all university students
+              The Tɛkyerɛma Pa Hackathon 2025 invites all university students
               and technology advocates to participate in creating innovative
               solutions that will make a significant impact on individuals with
               speech impairments in Ghana and beyond.
@@ -52,7 +52,7 @@ function HomePage() {
               At this hackathon, participants will be given the unique
               opportunity to help bridge the communication gap for individuals
               with speech disabilities through the development of cutting-edge
-              technologies such as text-to-speech (TTS) and automatic speech
+              technologies such as speech-to-text (STT) and automatic speech
               recognition (ASR) tailored for the Akan language. By focusing on
               these areas, the hackathon aims to create accessible tools that
               empower individuals to communicate more effectively in their
@@ -61,7 +61,7 @@ function HomePage() {
           </div>
           <ul>
             <li>
-              Integrate text-to-speech (TTS) or automatic speech recognition for
+              Integrate speech-to-text (STT) or automatic speech recognition for
               Akan.
             </li>
             <li>
