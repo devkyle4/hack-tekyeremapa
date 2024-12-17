@@ -306,6 +306,7 @@
         align-items: center;
         justify-content: center;
         width:100%;
+        gap: 20px;
     }
 
     .register-card{
@@ -315,5 +316,75 @@
     .register-card,
     .qr-code-container {
         width: 50%;
+    }
+}
+@media (max-width: 400px) {
+    .register-card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        /* Add space between items */
+        width: 100%;
+    }
+
+    .register-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        max-width: 300px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .countdown-timer {
+        order: -1;
+        /* Move the timer to the top */
+        margin-bottom: 10px;
+        /* Add space below the timer */
+        text-align: center;
+    }
+
+    .register-button-qr {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        /* Space between the button and QR code */
+        width: 100%;
+    }
+
+    .register-button {
+        display: inline-block;
+        text-align: center;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: #ff9900;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+        background-color: #e68900;
+    }
+
+    .qr-code-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .qr-code-container h3 {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
     }
 }

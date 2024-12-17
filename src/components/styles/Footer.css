@@ -1,3 +1,4 @@
+/* Footer Styling */
 .footer {
     background-color: #222;
     background-image: url('/public/footer_pic.png');
@@ -10,31 +11,39 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 10px;
+    /* Added horizontal padding for smaller screens */
     position: relative;
     font-family: Arial, sans-serif;
     flex-shrink: 0;
 }
-.footer-content p{
-text-align: center;
-}
 
 .footer-content {
-    max-width: 1200px;
+    max-width: 90%;
+    /* Adjust width for smaller screens */
     margin: auto;
     z-index: 1000;
+}
+
+.footer-content p {
+    text-align: center;
+    font-size: 0.9rem;
+    /* Adjust font size for better fit */
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
+    /* Reduce spacing between icons */
     margin: 10px 0;
 }
 
 .social-icons a {
     color: #ccc;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    /* Decrease icon size */
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -44,7 +53,8 @@ text-align: center;
 }
 
 .footer-logo {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    /* Reduce logo font size */
     font-weight: bold;
     margin-top: 10px;
 }
@@ -61,4 +71,32 @@ text-align: center;
     bottom: 0;
     background: rgba(0, 0, 0, 0.785);
     z-index: 0;
+}
+
+/* Media Query for max-width: 400px */
+@media (max-width: 400px) {
+    .footer {
+        padding: 15px 5px;
+        /* Adjust padding */
+    }
+
+    .footer-content p {
+        font-size: 0.8rem;
+        /* Smaller font for tight spaces */
+    }
+
+    .social-icons {
+        gap: 5px;
+        /* Reduce icon spacing further */
+    }
+
+    .social-icons a {
+        font-size: 1rem;
+        /* Smaller icons for small screens */
+    }
+
+    .footer-logo {
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
 }
