@@ -1,3 +1,23 @@
+/* Main container for the hackathon page */
+.hackathon-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 0;
+    padding: 0 20px;
+    /* Use padding for spacing instead of fixed margins */
+}
+
+/* Main Content Container (Center everything) */
+.main-content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
 /* Tags Section */
 .tags-section {
     width: auto;
@@ -5,8 +25,8 @@
     flex-direction: column;
     gap: 15px;
     align-self: self-start;
-    position: relative;
-    left: 80px;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .tags-section-title {
@@ -38,27 +58,6 @@
     transform: scale(1.05);
 }
 
-/* Main container for the hackathon page */
-.hackathon-page {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 30px 0;
-    padding: 0 20px;
-}
-
-/* Main Content Container (Center everything) */
-.main-content {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-right: 20px;
-    margin-left: 20px;
-    color: #0b0521;
-}
 
 /* Section Containers */
 .section {
@@ -73,15 +72,17 @@
     font-size: 1.2rem;
     line-height: 1.6;
     color: #333;
-    max-width: 900px;
-    /* text-align: center; */
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* About Section */
 .key-goals ul {
     list-style-type: disc;
     padding-left: 20px;
-    max-width: 900px;
+    max-width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -148,7 +149,7 @@
     width: 100%;
 }
 
-.sponsors a{
+.sponsors a {
     text-decoration: none;
 }
 
@@ -177,6 +178,7 @@
     color: #6B46C1;
     transform: scale(1.05);
 }
+
 /* Register Card container to hold both the card and QR code */
 .register-card-container {
     display: flex;
@@ -236,115 +238,84 @@
 .register-card .register-button:hover {
     background-color: #e68900;
 }
-/* Media Queries */
-@media (max-width: 768px) {
 
-.hackathon-page {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 30px 0;
-        padding: 20px;
-        /* height: 100vh; */
-        flex-direction: column;
+/* Medium screens (tablets and below) */
+@media (max-width: 1060px) {
+    .hackathon-page {
+        padding: 0 10px;
     }
 
-        .tags-section {
-            width: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            align-self: self-start;
-
-        }
-    
-        .tags-section-title {
-            font-size: 1.0rem;
-            font-weight: bold;
-            color: #021427;
-        }
-    
-        .tags-container {
-            display: flex;
-            /* Align tags in a row */
-            gap: 15px;
-            /* Space between the tags */
-        }
-    
-        .tag {
-            background-color: #021427;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 1rem;
-            font-weight: bold;
-            text-align: center;
-            transition: background-color 0.3s, transform 0.3s ease;
-            cursor: pointer;
-        }
-    
-        .tag:hover {
-            background-color: #ff9900;
-            transform: scale(1.05);
-        }
     .main-content {
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        padding: 20px;
+        margin: 0 auto;
+        padding: 0 10px;
     }
 
-    /* Stack the sections vertically in the center of the page */
-    .section {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
+    .carousel-container {
+        padding: 10px;
+        /* Adjust carousel padding */
     }
 
-    /* Sidebar Register Card */
-    .register-card {
-        width: 20%;
-        height: 10%;
-        background-color: #021427;
-        padding: 20px;
-        color: white;
-        border-radius: 8px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        position: relative;
-        bottom: 40px;
-        align-self: center;
-        margin-left: 0;
-    }
-
-    /* Other Mobile-specific adjustments */
-    .tags-section {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        position: static;
-        left: 0;
-        text-align: center;
-    }
-
-    .tags-container {
+    .register-card-container {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        align-items: flex-end;
+        width: 40%;
     }
 
-    .tag {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-        margin-bottom: 10px;
+    .register-card,
+    .qr-code-container {
+        width: 80%;
+        /* Adjust card width */
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+    .hackathon-page {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .register-card h3 {
-        font-size: 1.4rem;
-        margin-bottom: 20px;
+    .overview{
+        margin-left: 15%;
+        width: 100%;
+        max-width: 80%;
     }
 
-    .register-card .register-button {
-        font-size: 1.2rem;
-        padding: 12px 20px;
+    .main-content {
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .key-goals, .rules, .awards{
+        margin-left: 10%;
+        padding: 0 5%;
+        width: 80%;
+    }
+
+    .section {
+        padding: 10px;
+        /* Reduce padding in sections */
+    }
+
+    .register-card-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+    }
+
+    .register-card{
+        height: 5%;
+    }
+    
+    .register-card,
+    .qr-code-container {
+        width: 50%;
+
     }
 }

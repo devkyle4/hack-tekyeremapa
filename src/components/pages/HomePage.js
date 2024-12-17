@@ -4,7 +4,7 @@ import MiddleNavbar from "../MiddleNavbar.js";
 import FAQSection from "./faqs";
 import Timeline from "./timeline";
 import CountdownTimer from "../Timer";
-import { QRCodeSVG } from "qrcode.react"; // Import QRCodeSVG
+import { QRCodeSVG } from "qrcode.react";
 
 const downloadDataset = () => {
   window.open(
@@ -97,9 +97,7 @@ function HomePage() {
         <section id="prizes" className="section awards">
           <h2>Awards</h2>
           <ul>
-            <li>
-              Up to £5,000 in awards plus $5000 cash prize 
-            </li>
+            <li>Up to £5,000 in awards plus $5000 cash prize</li>
             <li>
               Mentorship opportunities with experts from Google and GDI Hub,
               University College of London.

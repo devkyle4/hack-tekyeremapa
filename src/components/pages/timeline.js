@@ -66,7 +66,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div id="timelines" className="timeline-container">
+    <div id="timelines" className="section timeline-container">
       <h2 className="timeline-header">Timelines</h2>
       <div className="timeline">
         {timelineData.map((item, index) => (
