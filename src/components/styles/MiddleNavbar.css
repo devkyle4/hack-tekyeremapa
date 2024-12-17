@@ -43,36 +43,23 @@
 }
 
 
-/* Existing styles remain the same */
-/* Existing styles remain the same */
-
 @media (max-width: 645px) {
     .middle-navbar {
         padding: 10px 10px;
-        /* Reduce padding to save space */
         margin-left: 0;
-        /* Remove left margin */
     }
 
     .middle-navbar .navbar-links {
         gap: 10px;
-        /* Reduce gap between links */
         justify-content: center;
-        /* Center links horizontally */
         flex-wrap: wrap;
-        /* Allow links to wrap to next line if needed */
     }
 
     .middle-navbar .navbar-link {
         flex-shrink: 1;
-        /* Allow links to shrink */
         flex-grow: 1;
-        /* Allow links to grow */
         text-align: center;
-        /* Center text within links */
         padding: 8px 10px;
-        /* Adjust padding */
         max-width: 100px;
-        /* Optional: limit maximum width of links */
     }
 }

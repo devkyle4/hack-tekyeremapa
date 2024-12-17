@@ -298,7 +298,6 @@
 
     .section {
         padding: 10px;
-        /* Reduce padding in sections */
     }
 
     .register-card-container {
@@ -316,6 +315,5 @@
     .register-card,
     .qr-code-container {
         width: 50%;
-
     }
 }

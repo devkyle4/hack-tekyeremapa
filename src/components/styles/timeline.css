@@ -67,7 +67,6 @@
   padding: 15px;
   border-radius: 8px;
   margin-left: 60px;
-  /* Create some space to the right of the timeline dot */
 }
 
 /* Timeline dates styling */
@@ -99,7 +98,6 @@
 /* Responsive Design */
 @media (max-width: 768px) {
 
-  /* Ensure timeline and other content is properly centered */
   .timeline-container {
     width: 100%;
     margin-left: 15%;
@@ -109,9 +107,7 @@
 
   .timeline-header {
     font-size: 1.5rem;
-    /* Adjust header font size */
     margin-bottom: 10px;
-    /* Reduce bottom margin */
   }
 
   .timeline {
@@ -156,7 +152,6 @@
 }
 
 @media (max-width: 1060px) {
-  /* Ensure timeline and other content is properly centered */
     .timeline-container {
       /* width: 100%; */
       margin-top: 50px;
@@ -194,11 +189,16 @@
   
     .timeline-description {
       font-size: 0.9rem;
-      /* Slightly smaller font for readability */
     }
   
     /* Adjust margin for better spacing between timeline items */
     .timeline-item {
       margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 645px) {
+  .timeline {
+      width: 90%;
     }
 }
