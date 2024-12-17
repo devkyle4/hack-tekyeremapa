@@ -42,32 +42,37 @@
     background-color: #021427;
 }
 
-/* Mobile navbar */
-@media (max-width: 768px) {
 
-/* Middle Navbar */
+/* Existing styles remain the same */
+/* Existing styles remain the same */
+
+@media (max-width: 645px) {
     .middle-navbar {
-        display: flex;
-        justify-content: center;
-        background-color: #021427;
-        padding: 10px;
-        width: 100%;
-        position: -webkit-sticky;
-        /* For Safari */
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        transition: top 0.3s ease;
-        margin-left: 10px;
+        padding: 10px 10px;
+        /* Reduce padding to save space */
+        margin-left: 0;
+        /* Remove left margin */
     }
 
-        .middle-navbar .navbar-link {
-            color: white;
-            font-weight: bold;
-            font-size: 15px;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+    .middle-navbar .navbar-links {
+        gap: 10px;
+        /* Reduce gap between links */
+        justify-content: center;
+        /* Center links horizontally */
+        flex-wrap: wrap;
+        /* Allow links to wrap to next line if needed */
+    }
+
+    .middle-navbar .navbar-link {
+        flex-shrink: 1;
+        /* Allow links to shrink */
+        flex-grow: 1;
+        /* Allow links to grow */
+        text-align: center;
+        /* Center text within links */
+        padding: 8px 10px;
+        /* Adjust padding */
+        max-width: 100px;
+        /* Optional: limit maximum width of links */
+    }
 }
