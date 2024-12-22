@@ -306,7 +306,7 @@
     }
 
     .hackathon-page p {
-    text-align: left;
+    text-align: left !important;
 }
 
     .overview{
@@ -323,7 +323,7 @@
         align-items: center;
     }
 
-    .rules, .awards{
+     .awards{
         margin-left: 10%;
         padding: 0 5%;
         width: 80%;

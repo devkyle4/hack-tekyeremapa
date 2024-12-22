@@ -51,7 +51,7 @@ function HomePage() {
           </button>
         </section>
         <MiddleNavbar />
-        {/* Rules Section */}
+        {/* Aims Section */}
         <section id="goals" className="section aims">
           <h3>Aims</h3>
           <p>
