@@ -55,13 +55,13 @@ function HomePage() {
         <section id="goals" className="section aims">
           <h3>Aims</h3>
           <p>
-            AIM: To design and develop an app in Akan that supports individuals
+           To design and develop an app in Akan that supports individuals
             with speech impairments to communicate effectively and inclusively.
           </p>
           <h4>Key Goals:</h4>
           <ul>
             <li>
-              Integrate Text-to-Speech (TTS) or automatic speech recognition for
+              Integrate Text-to-Speech (TTS) or Automatic Speech Recognition(ASR) for
               Ghanaian languages.
             </li>
             <li>
