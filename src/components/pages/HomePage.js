@@ -55,14 +55,15 @@ function HomePage() {
         <section id="goals" className="section aims">
           <h3>Aims</h3>
           <p>
-           To design and develop an app in Akan that supports individuals
-            with speech impairments to communicate effectively and inclusively.
+            To design and develop an app that supports individuals with speech
+            impairments to communicate effectively and inclusively in Ghanaian
+            languages.
           </p>
           <h4>Key Goals:</h4>
           <ul>
             <li>
-              Integrate Text-to-Speech (TTS) or Automatic Speech Recognition(ASR) for
-              Ghanaian languages.
+              Integrate Text-to-Speech (TTS) or Automatic Speech
+              Recognition(ASR) for Ghanaian languages.
             </li>
             <li>
               Develop an intuitive and user-friendly interface tailored to the
