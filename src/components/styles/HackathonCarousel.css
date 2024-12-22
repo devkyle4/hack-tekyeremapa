@@ -1,8 +1,9 @@
 .carousel-container {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 100%;
+    /* margin: 0 auto; */
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .carousel-slide {
@@ -59,7 +60,6 @@
         body {
             margin: 0;
             padding: 0;
-            /* overflow-x: hidden; */
         }
 
         .container {
@@ -70,9 +70,8 @@
 
 
     .carousel-container {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
         }
 
     .carousel-slide {

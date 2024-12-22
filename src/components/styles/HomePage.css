@@ -5,12 +5,12 @@
     align-items: flex-start;
     margin: 30px 0;
     padding: 0 20px;
-    /* Use padding for spacing instead of fixed margins */
+    font-size: 1.2rem;
 }
 
 /* Main Content Container (Center everything) */
 .main-content {
-    max-width: 1200px;
+    max-width: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -65,6 +65,7 @@
     text-align: left;
     width: 100%;
     color: #0b0521;
+    font-size: 1.2rem;
 }
 
 /* Hackathon Overview Section */
@@ -77,20 +78,6 @@
     margin: 0 auto;
 }
 
-/* About Section */
-.key-goals ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    max-width: 100%;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.key-goals li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    color: #0b0521;
-}
 
 /* Style for Download Dataset button */
 .about-link.download-btn {
@@ -102,10 +89,15 @@
     padding: 20px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-bottom: 20px;
 }
 
 .about-link.download-btn:hover {
     background-color: #bc0707;
+}
+
+.goals li{
+    line-height: 1.8;
 }
 
 /* Rules Section */
@@ -116,7 +108,6 @@
 }
 
 .rules li {
-    font-size: 1rem;
     color: #555;
     margin-bottom: 10px;
     color: #0b0521;
@@ -276,6 +267,10 @@
         align-items: center;
     }
 
+    .hackathon-page p {
+    text-align: left;
+}
+
     .overview{
         margin-left: 15%;
         width: 100%;
@@ -290,7 +285,7 @@
         align-items: center;
     }
 
-    .key-goals, .rules, .awards{
+    .rules, .awards{
         margin-left: 10%;
         padding: 0 5%;
         width: 80%;
@@ -313,10 +308,65 @@
         height: 5%;
     }
     
-    .register-card,
     .qr-code-container {
         width: 50%;
     }
+    .register-card{
+        width: 40%;
+    }
+}
+
+@media (max-width:450px) {
+    .carousel-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+    .tags-section {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-self: self-start;
+        margin: 0 auto;
+        align-items: center;
+        }
+
+        .tags-container {
+            display: flex;
+            gap: 5px;
+        }
+    
+        .tag {
+            font-size: 0.5rem;   
+        }
+
+    .sponsors {
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+            justify-content: flex-start;
+        }
+
+        .sponsors .euphonia {
+            font-size: 10px;
+        }
+    
+        .sponsors img,
+        .sponsors a {
+            max-width: 10%;
+            height: auto;
+            text-align: center;
+        }
+    
+        .sponsors h2 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
 }
 @media (max-width: 400px) {
     .register-card-container {
@@ -325,7 +375,6 @@
         align-items: center;
         justify-content: center;
         gap: 15px;
-        /* Add space between items */
         width: 100%;
     }
 
@@ -342,10 +391,12 @@
 
     .countdown-timer {
         order: -1;
-        /* Move the timer to the top */
         margin-bottom: 10px;
-        /* Add space below the timer */
         text-align: center;
+    }
+
+    .countdown-timer h2{
+        font-size: 1rem;
     }
 
     .register-button-qr {
@@ -354,7 +405,6 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        /* Space between the button and QR code */
         width: 100%;
     }
 

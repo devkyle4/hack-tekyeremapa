@@ -42,28 +42,6 @@
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
-    .countdown-timer {
-        padding: 15px;
-        max-width: 100%;
-    }
-
-    .timer {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .time-unit span {
-        font-size: 1.5rem;
-    }
-        .time-unit p {
-            font-size: 1rem;
-        }
-
-    .timer-header {
-        font-size: 1.2rem;
-    }
-}
 
 @media (max-width: 645px) {
     .countdown-timer {
@@ -88,14 +66,13 @@
 
     .time-unit p {
         font-size: 0.7rem;
-        /* Reduce unit size */
     }
 }
 
 @media (max-width: 768px) {
     .countdown-timer {
-            padding: 10px;
-            max-width: 90%;
+         padding: 10px;
+         max-width: 90%;
         }
     
         .timer {
@@ -105,7 +82,6 @@
     
         .time-unit {
             min-width: 50px;
-            /* Smaller width for tighter fit */
             padding: 3px 5px;
         }
     
@@ -115,7 +91,6 @@
     
         .time-unit p {
             font-size: 0.7rem;
-            /* Reduce unit size */
         }
 }
 

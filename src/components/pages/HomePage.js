@@ -26,20 +26,7 @@ function HomePage() {
           </div>
         </div>
         {/* Overview, About, Rules, etc. */}
-        <section id="overview" className="section overview">
-          <h2>Overview</h2>
-          <p>
-            Join us for the Tɛkyerɛma Pa Hackathon 2025, an innovation-driven
-            event aimed at designing and developing a groundbreaking app in Akan
-            to support individuals with speech impairments. This hackathon
-            invites tech enthusiasts, developers, linguists, and accessibility
-            advocates to collaborate on creating a tool that empowers effective
-            and inclusive communication for all.
-          </p>
-        </section>
-        <MiddleNavbar />
-        {/* About Section */}
-        <section id="about" className="section key-goals">
+        <section id="about" className="section overview">
           <h3>About</h3>
           <div className="about-hack">
             <p className="about-1">
@@ -52,17 +39,25 @@ function HomePage() {
               At this hackathon, participants will be given the unique
               opportunity to help bridge the communication gap for individuals
               with speech disabilities through the development of cutting-edge
-              technologies such as speech-to-text (STT) and automatic speech
-              recognition (ASR) tailored for the Akan language. By focusing on
+              technologies such as Text-to-Speech (TTS) and automatic speech
+              recognition (ASR) tailored for Ghanaia languages. By focusing on
               these areas, the hackathon aims to create accessible tools that
               empower individuals to communicate more effectively in their
               native language, breaking down barriers to inclusion.
             </p>
           </div>
+          <button className="about-link download-btn" onClick={downloadDataset}>
+            Link to Dataset
+          </button>
+        </section>
+        <MiddleNavbar />
+        {/* Rules Section */}
+        <section id="goals" className="section goals">
+          <h2>Goals</h2>
           <ul>
             <li>
-              Integrate speech-to-text (STT) or automatic speech recognition for
-              Akan.
+              Integrate Text-to-Speech (TTS) or automatic speech recognition for
+              Ghanaian languages.
             </li>
             <li>
               Develop an intuitive and user-friendly interface tailored to the
@@ -75,10 +70,8 @@ function HomePage() {
             </li>
             <li>Scalability of the app to other Ghanaian languages.</li>
           </ul>
-          <button className="about-link download-btn" onClick={downloadDataset}>
-            Link to Dataset
-          </button>
         </section>
+
         {/* Rules Section */}
         <section id="rules" className="section rules">
           <h2>Rules</h2>
