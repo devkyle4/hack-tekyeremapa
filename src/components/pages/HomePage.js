@@ -40,7 +40,7 @@ function HomePage() {
               opportunity to help bridge the communication gap for individuals
               with speech disabilities through the development of cutting-edge
               technologies such as Text-to-Speech (TTS) and automatic speech
-              recognition (ASR) tailored for Ghanaia languages. By focusing on
+              recognition (ASR) tailored for Ghanaian languages. By focusing on
               these areas, the hackathon aims to create accessible tools that
               empower individuals to communicate more effectively in their
               native language, breaking down barriers to inclusion.
@@ -52,8 +52,13 @@ function HomePage() {
         </section>
         <MiddleNavbar />
         {/* Rules Section */}
-        <section id="goals" className="section goals">
-          <h2>Goals</h2>
+        <section id="goals" className="section aims">
+          <h3>Aims</h3>
+          <p>
+            AIM: To design and develop an app in Akan that supports individuals
+            with speech impairments to communicate effectively and inclusively.
+          </p>
+          <h4>Key Goals:</h4>
           <ul>
             <li>
               Integrate Text-to-Speech (TTS) or automatic speech recognition for
@@ -68,13 +73,13 @@ function HomePage() {
               Address accessibility standards, enabling individuals with varying
               levels of impairment to use the app seamlessly.
             </li>
-            <li>Scalability of the app to other Ghanaian languages.</li>
+            <li>Scalability of the app to other low-resource languages.</li>
           </ul>
         </section>
 
         {/* Rules Section */}
         <section id="rules" className="section rules">
-          <h2>Rules</h2>
+          <h3>Rules</h3>
           <ul>
             <li>Each team is expected to have a maximum of 5 members.</li>
             <li>Each team must include at least one female participant.</li>
@@ -88,7 +93,7 @@ function HomePage() {
         <Timeline />
         {/* Awards Section */}
         <section id="prizes" className="section awards">
-          <h2>Awards</h2>
+          <h3>Awards</h3>
           <ul>
             <li>Up to £5,000 in awards plus $5000 cash prize</li>
             <li>

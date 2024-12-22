@@ -29,7 +29,7 @@ const MiddleNavbar = () => {
         {/* Navbar Links */}
         <div className={`navbar-links ${isMenuOpen ? "open" : ""}`}>
           <a href="#goals" className="navbar-link">
-            Goals
+            Aim
           </a>
           <a href="#timelines" className="navbar-link">
             Timelines
