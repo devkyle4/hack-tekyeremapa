@@ -63,7 +63,7 @@ function HomePage() {
           <ul>
             <li>
               Integrate Text-to-Speech (TTS) or Automatic Speech
-              Recognition(ASR) for Ghanaian languages.
+              Recognition(ASR) for Ghanaian languages.cle
             </li>
             <li>
               Develop an intuitive and user-friendly interface tailored to the
