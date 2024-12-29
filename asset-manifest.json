@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/hack-tekyeremapa/static/css/main.8a97f0ce.css",
+    "main.js": "/hack-tekyeremapa/static/js/main.57b08d20.js",
+    "static/media/footer_pic.png": "/hack-tekyeremapa/static/media/footer_pic.e4fd4a4565c42877385a.png",
+    "static/media/slick.svg": "/hack-tekyeremapa/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/hack-tekyeremapa/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/hack-tekyeremapa/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/hack-tekyeremapa/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/hack-tekyeremapa/index.html",
+    "main.8a97f0ce.css.map": "/hack-tekyeremapa/static/css/main.8a97f0ce.css.map",
+    "main.57b08d20.js.map": "/hack-tekyeremapa/static/js/main.57b08d20.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a97f0ce.css",
+    "static/js/main.57b08d20.js"
+  ]
+}
